@@ -1,6 +1,6 @@
 package pattern.singleton;
 
-public class SingletonDemo1{
+public class SingletonDemo1 implements Cloneable{
 //	private static final SingletonDemo1 INSTANCE = new SingletonDemo1(); //Eager loading
 	private static SingletonDemo1 INSTANCE = null; // For Lazy loading
 	
@@ -18,5 +18,8 @@ public class SingletonDemo1{
 	}
 	public void logging() {
 		System.out.println("Logging.......");
+	}
+	protected  Object clone() throws CloneNotSupportedException{
+		return super.clone();
 	}
 }
