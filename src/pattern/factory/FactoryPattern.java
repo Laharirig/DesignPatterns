@@ -15,7 +15,7 @@ public class FactoryPattern {
 			case "email":
 				return new EmailNotification();
 			default:
-				return null;
+				return new OtherNotification();
 		}
 	}
 }

@@ -6,5 +6,7 @@ public class Main {
 		smsNotification.notifyy();
 		Notification emailNotification = FactoryPattern.generateNotification("email");
 		emailNotification.notifyy();
+		Notification otherNotification = FactoryPattern.generateNotification("vfs");
+		otherNotification.notifyy();
 	}
 }
